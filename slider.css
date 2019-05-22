@@ -1,0 +1,196 @@
+html,
+body,
+div,
+span,
+h1,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font: normal 16px/20px Roboto, "Helvetica CY", Verdana, sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+.mainTitle {
+  color: red;
+  margin-bottom: 50px;
+  font-weight: 1000;
+  text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+  .mainTitle {
+    margin-bottom: 20px;
+  }
+}
+
+.wrap {
+  width: 100%;
+  min-width: 320px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 40px 15px 0;
+  background-color: rgb(44, 49, 42);
+}
+
+@media only screen and (max-width: 400px) {
+  .wrap {
+    padding-top: 20px;
+  }
+}
+
+.containerInputField {
+  display: flex;
+  justify-content: center;
+}
+
+.btnSearch {
+  height: 30px;
+  width: 100px;
+  outline: none;
+  font-weight: 1000;
+}
+
+.inputField {
+  width:40%;
+  height: 30px;
+  font-weight: 600;
+  color:maroon;
+  font-size: 18px;
+  margin-bottom: 50px;
+  margin-right: 30px;
+}
+
+@media only screen and (max-width: 400px) {
+  .inputField {
+    margin-bottom: 20px
+  }
+}
+
+@media only screen and (min-width: 300px) {
+  .inputField {
+    font-size: 14px;
+  }
+}
+
+.nav-ctrl span,
+.dots-ctrl span {
+  transition: all 0.3s;
+}
+
+.content {
+  width: 100%;
+  visibility: hidden;
+  margin: 0 auto 10px;
+}
+
+.slider {
+  width: 100%;
+  max-width: 1024px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.stage {
+  overflow: hidden;
+  height: 400px !important;
+}
+
+.stage > div {
+  float: left;
+  position: relative;
+  height: 100%;
+}
+
+.control {
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
+}
+
+@media only screen and (max-width: 400px) {
+  .control {
+    margin-top: 15px;
+  }
+}
+
+.nav-ctrl {
+  display: none;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+.nav-ctrl span {
+  width: 100px;
+  height: 30px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 30px;
+  color: #eee;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 5px;
+  border: solid 1px #357ebd;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  outline: none;
+  -webkit-user-select: none;
+  user-select: none;
+  background-color: #428bca;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav-ctrl span:hover {
+  border-color: #285e8e;
+  background-color: #3276b1;
+}
+
+.nav-ctrl .disable,
+.nav-ctrl .disable:hover {
+  border: solid 1px #357ebd;
+  background-color: #428bca;
+  opacity: 0.4;
+  cursor: default;
+}
+
+.dots-ctrl {
+  display: none;
+  margin-top: 10px;
+}
+
+.dots-ctrl li {
+  display: inline-block;
+}
+
+.dots-ctrl span {
+  width: 10px;
+  height: 10px;
+  display: block;
+  margin: 5px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #0099ff;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.dots-ctrl .active span,
+.dots-ctrl span:hover {
+  opacity: 1;
+}
